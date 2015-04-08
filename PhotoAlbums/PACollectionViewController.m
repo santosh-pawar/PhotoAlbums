@@ -127,7 +127,8 @@ static NSString * const AlbumTitleIdentifier = @"AlbumTitle";
     self.photoQueue = [[NSOperationQueue alloc] init];
     self.photoQueue.maxConcurrentOperationCount = 3;
     
-    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.25f alpha:1.0f];
+    UIImage *patternImage = [UIImage imageNamed:@"concrete_wall"];
+    self.collectionView.backgroundColor = [UIColor colorWithPatternImage:patternImage];
     
     [self.collectionView registerClass:[PAAlbumPhotoCell class] forCellWithReuseIdentifier:PhotoCellIdentifier];
     

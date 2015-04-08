@@ -7,7 +7,9 @@
 //
 
 #import "PACollectionViewLayout.h"
+#import "PAEmblemView.h"
 
+static NSString * const PAPhotoEmblemKind = @"Emblem";
 static NSString * const PAPhotoAlbumLayoutPhotoCellKind = @"PhotoCell";
 static NSUInteger const RotationCount = 32;
 static NSUInteger const RotationStride = 3;
@@ -81,6 +83,10 @@ NSString * const PACollectionViewLayoutTitleKind = @"AlbumTitle";
     NSInteger sectionCount = [self.collectionView numberOfSections];
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
     
+    UICollectionViewLayoutAttributes *emblemAttributes = [UICollectionViewLayoutAttributes layoutAttributesForDecorationViewOfKind:PAPhotoEmblemKind withIndexPath:indexPath];
+    emblemAttributes.frame = [self frameForEmblem];
+    newLayoutInfo[PAPhotoEmblemKind] = @{indexPath:emblemAttributes};
+    
     for(NSInteger section = 0; section < sectionCount; section++){
         NSInteger itemCount = [self.collectionView numberOfItemsInSection:section];
         for (NSInteger item = 0; item < itemCount; item++) {
@@ -138,6 +144,16 @@ NSString * const PACollectionViewLayoutTitleKind = @"AlbumTitle";
     return CGRectMake(originX, originY, self.itemSize.width, self.itemSize.height);
 }
 
+
+- (CGRect)frameForEmblem
+{
+    CGSize size = [PAEmblemView defaultSize];
+    CGFloat originX = floorf((self.collectionView.bounds.size.width - size.width) * 0.5f);
+    CGFloat originY = -size.height - 30.0f;
+    return CGRectMake(originX, originY, size.width, size.height);
+}
+
+
 - (NSArray*)layoutAttributesForElementsInRect:(CGRect)rect{
     
     NSMutableArray *allAttributes = [NSMutableArray arrayWithCapacity:self.layoutInfo.count];
@@ -174,6 +190,11 @@ NSString * const PACollectionViewLayoutTitleKind = @"AlbumTitle";
                                                                      atIndexPath:(NSIndexPath *)indexPath
 {
     return self.layoutInfo[PACollectionViewLayoutTitleKind][indexPath];
+}
+
+- (UICollectionViewLayoutAttributes*)layoutAttributesForDecorationViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath
+{
+    return self.layoutInfo[PAPhotoEmblemKind][indexPath];
 }
 
 #pragma mark -
@@ -226,6 +247,7 @@ NSString * const PACollectionViewLayoutTitleKind = @"AlbumTitle";
     }
     
     self.rotations = rotations;
+    [self registerClass:[PAEmblemView class] forDecorationViewOfKind:PAPhotoEmblemKind];
 }
 
 - (CATransform3D)transformForAlbumPhotoAtIndex:(NSIndexPath *)indexPath
