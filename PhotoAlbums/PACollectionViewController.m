@@ -112,7 +112,7 @@
         NSUInteger photoCount = 1;
         for (NSInteger p = 1; p <= photoCount; p++) {
             // there are up to 25 photos available to load from the code repository
-            NSString *photoFilename = [NSString stringWithFormat:@"%ld.jpg",photoIndex % 25];
+            NSString *photoFilename = [NSString stringWithFormat:@"photo%ld.jpg",photoIndex % 25];
             NSURL *photoURL = [urlPrefix URLByAppendingPathComponent:photoFilename];
             PAPhoto *photo = [PAPhoto photoWithImageURL:photoURL];
             [album addPhoto:photo];
