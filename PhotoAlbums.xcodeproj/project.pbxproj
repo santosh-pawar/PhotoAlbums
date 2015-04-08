@@ -18,7 +18,6 @@
 		2CB9E4DC1AD471360035B088 /* PAAlbumPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E4DB1AD471360035B088 /* PAAlbumPhotoCell.m */; };
 		2CB9E4E01AD481250035B088 /* PAAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E4DF1AD481250035B088 /* PAAlbum.m */; };
 		2CB9E4E31AD481400035B088 /* PAPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E4E21AD481400035B088 /* PAPhoto.m */; };
-		2CB9E5141AD4861A0035B088 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9E4E61AD486190035B088 /* 03.jpg */; };
 		2CB9E5151AD4861A0035B088 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9E4E71AD486190035B088 /* 1.jpg */; };
 		2CB9E5161AD4861A0035B088 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9E4E81AD486190035B088 /* 10.jpg */; };
 		2CB9E5171AD4861A0035B088 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9E4E91AD486190035B088 /* 11.jpg */; };
@@ -64,6 +63,7 @@
 		2CB9E53F1AD4861A0035B088 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9E5111AD4861A0035B088 /* 7.jpg */; };
 		2CB9E5401AD4861A0035B088 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9E5121AD4861A0035B088 /* 8.jpg */; };
 		2CB9E5411AD4861A0035B088 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9E5131AD4861A0035B088 /* 9.jpg */; };
+		AAD3230A1AD4E4E2006514C4 /* 30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAD323091AD4E4E2006514C4 /* 30.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +98,6 @@
 		2CB9E4DF1AD481250035B088 /* PAAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAAlbum.m; sourceTree = "<group>"; };
 		2CB9E4E11AD481400035B088 /* PAPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPhoto.h; sourceTree = "<group>"; };
 		2CB9E4E21AD481400035B088 /* PAPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPhoto.m; sourceTree = "<group>"; };
-		2CB9E4E61AD486190035B088 /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
 		2CB9E4E71AD486190035B088 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		2CB9E4E81AD486190035B088 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		2CB9E4E91AD486190035B088 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
@@ -144,6 +143,7 @@
 		2CB9E5111AD4861A0035B088 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		2CB9E5121AD4861A0035B088 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		2CB9E5131AD4861A0035B088 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		AAD323091AD4E4E2006514C4 /* 30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 30.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +259,7 @@
 		2CB9E4E51AD486190035B088 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2CB9E4E61AD486190035B088 /* 03.jpg */,
+				AAD323091AD4E4E2006514C4 /* 30.jpg */,
 				2CB9E4E71AD486190035B088 /* 1.jpg */,
 				2CB9E4E81AD486190035B088 /* 10.jpg */,
 				2CB9E4E91AD486190035B088 /* 11.jpg */,
@@ -399,10 +399,10 @@
 				2CB9E5211AD4861A0035B088 /* 20.jpg in Resources */,
 				2CB9E52F1AD4861A0035B088 /* 34.jpg in Resources */,
 				2CB9E5181AD4861A0035B088 /* 12.jpg in Resources */,
+				AAD3230A1AD4E4E2006514C4 /* 30.jpg in Resources */,
 				2CB9E5191AD4861A0035B088 /* 13.jpg in Resources */,
 				2CB9E5361AD4861A0035B088 /* 40.jpg in Resources */,
 				2CB9E5401AD4861A0035B088 /* 8.jpg in Resources */,
-				2CB9E5141AD4861A0035B088 /* 03.jpg in Resources */,
 				2CB9E5331AD4861A0035B088 /* 38.jpg in Resources */,
 				2CB9E52B1AD4861A0035B088 /* 3.jpg in Resources */,
 				2CB9E5411AD4861A0035B088 /* 9.jpg in Resources */,
@@ -652,6 +652,7 @@
 				2CB9E4D21AD46D8E0035B088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CB9E4D31AD46D8E0035B088 /* Build configuration list for PBXNativeTarget "PhotoAlbumsTests" */ = {
 			isa = XCConfigurationList;
@@ -660,6 +661,7 @@
 				2CB9E4D51AD46D8E0035B088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

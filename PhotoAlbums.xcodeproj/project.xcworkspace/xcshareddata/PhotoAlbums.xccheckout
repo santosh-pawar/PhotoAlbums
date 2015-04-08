@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2D886A30-1057-4238-A522-6945B99A0BE6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PhotoAlbums</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3C436CAECF5BC6AF69AC61820A667689F54223CF</key>
+		<string>https://github.com/santosh-pawar/PhotoAlbums.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PhotoAlbums.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3C436CAECF5BC6AF69AC61820A667689F54223CF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/santosh-pawar/PhotoAlbums.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3C436CAECF5BC6AF69AC61820A667689F54223CF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C436CAECF5BC6AF69AC61820A667689F54223CF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotoAlbums</string>
+		</dict>
+	</array>
+</dict>
+</plist>
