@@ -10,7 +10,7 @@
 
 @interface PAPhoto ()
 
-@property (nonatomic, strong, readwrite) NSURL *imageURL;
+@property (nonatomic, strong, readwrite) NSString *imagePath;
 @property (nonatomic, strong, readwrite) UIImage *image;
 
 @end
@@ -21,9 +21,9 @@
 
 - (UIImage *)image
 {
-    if (!_image && self.imageURL) {
-        NSData *imageData = [NSData dataWithContentsOfURL:self.imageURL];
-        UIImage *image = [UIImage imageWithData:imageData scale:[UIScreen mainScreen].scale];
+    if (!_image && self.imagePath) {
+//        NSData *imageData = [NSData dataWithContentsOfURL:self.imagePath];
+        UIImage *image = [UIImage imageNamed:self.imagePath];
         
         _image = image;
     }
@@ -33,16 +33,16 @@
 
 #pragma mark - Lifecycle
 
-+ (PAPhoto *)photoWithImageURL:(NSURL *)imageURL
++ (PAPhoto *)photoWithImagePath:(NSString *)imagePath
 {
-    return [[self alloc] initWithImageURL:imageURL];
+    return [[self alloc] initWithImagePath:imagePath];
 }
 
-- (id)initWithImageURL:(NSURL *)imageURL
+- (id)initWithImagePath:(NSString *)imagePath
 {
     self = [super init];
     if (self) {
-        self.imageURL = imageURL;
+        self.imagePath = imagePath;
     }
     return self;
 }

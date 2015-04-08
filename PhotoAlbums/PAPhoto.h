@@ -11,11 +11,11 @@
 
 @interface PAPhoto : NSObject
 
-@property (nonatomic, strong, readonly) NSURL *imageURL;
+@property (nonatomic, strong, readonly) NSString *imagePath;
 @property (nonatomic, strong, readonly)  UIImage *image;
 
-+ (PAPhoto *)photoWithImageURL:(NSURL *)imageURL;
++ (PAPhoto *)photoWithImagePath:(NSString *)imagePath;
 
-- (id)initWithImageURL:(NSURL *)imageURL;
+- (id)initWithImagePath:(NSString *)imagePath;
 
 @end

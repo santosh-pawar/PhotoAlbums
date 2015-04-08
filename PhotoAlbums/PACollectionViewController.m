@@ -100,21 +100,17 @@
     
     self.albums = [NSMutableArray array];
     
-    NSURL *urlPrefix =
-    [NSURL URLWithString:@"https://github.com/santosh-pawar/PhotoAlbums/tree/master/PhotoAlbums/Images/"];
-    
     NSInteger photoIndex = 1;
     
-    for (NSInteger a = 0; a < 46; a++) {
+    //There are 46 photos in this app bundle
+    for (NSInteger index = 0; index < 46; index++) {
         PAAlbum *album = [[PAAlbum alloc] init];
-        album.name = [NSString stringWithFormat:@"Photo Album %ld",a + 1];
+        album.name = [NSString stringWithFormat:@"Photo Album %ld",index + 1];
         
         NSUInteger photoCount = 1;
         for (NSInteger p = 1; p <= photoCount; p++) {
-            // there are up to 25 photos available to load from the code repository
-            NSString *photoFilename = [NSString stringWithFormat:@"photo%ld.jpg",photoIndex % 25];
-            NSURL *photoURL = [urlPrefix URLByAppendingPathComponent:photoFilename];
-            PAPhoto *photo = [PAPhoto photoWithImageURL:photoURL];
+            NSString *photoFilename = [NSString stringWithFormat:@"photo%ld.jpg",photoIndex % 47];
+            PAPhoto *photo = [PAPhoto photoWithImagePath:photoFilename];
             [album addPhoto:photo];
             
             photoIndex++;
@@ -123,27 +119,6 @@
         [self.albums addObject:album];
     }
 }
-/*
- NSInteger photoIndex = 0;
- 
- for (NSInteger a = 0; a < 46; a++) {
- PAAlbum *album = [[PAAlbum alloc] init];
- album.name = [NSString stringWithFormat:@"Photo Album %ld",a + 1];
- 
- NSUInteger photoCount = 2;
- for (NSInteger p = 1; p < photoCount; p++) {
- NSString *file = [NSString stringWithFormat:@"%ld",(long)p];
- NSString *photoFilename = [[NSBundle mainBundle] pathForResource:file ofType:@"jpg"];
- 
- NSURL *photoURL = [NSURL URLWithString:photoFilename];
- PAPhoto *photo = [PAPhoto photoWithImageURL:photoURL];
- [album addPhoto:photo];
- 
- photoIndex++;
- }
- 
- [self.albums addObject:album];
- */
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
