@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+UIKIT_EXTERN NSString * const PACollectionViewLayoutTitleKind;
 
 @interface PACollectionViewLayout : UICollectionViewLayout
 
@@ -14,5 +15,6 @@
 @property (nonatomic) CGSize itemSize;
 @property (nonatomic) CGFloat interItemSpacingY;
 @property (nonatomic) NSInteger numberOfColumns;
+@property (nonatomic) CGFloat titleHeight;
 
 @end

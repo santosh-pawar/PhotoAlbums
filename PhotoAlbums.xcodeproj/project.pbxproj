@@ -18,6 +18,8 @@
 		2CB9E4DC1AD471360035B088 /* PAAlbumPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E4DB1AD471360035B088 /* PAAlbumPhotoCell.m */; };
 		2CB9E4E01AD481250035B088 /* PAAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E4DF1AD481250035B088 /* PAAlbum.m */; };
 		2CB9E4E31AD481400035B088 /* PAPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E4E21AD481400035B088 /* PAPhoto.m */; };
+		2CB9E5431AD57B840035B088 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB9E5421AD57B840035B088 /* QuartzCore.framework */; };
+		2CB9E5461AD580140035B088 /* PAAlbumTitleReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9E5451AD580140035B088 /* PAAlbumTitleReusableView.m */; };
 		AAD323391AD4F064006514C4 /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAD3230B1AD4F064006514C4 /* photo1.jpg */; };
 		AAD3233A1AD4F064006514C4 /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAD3230C1AD4F064006514C4 /* photo2.jpg */; };
 		AAD3233B1AD4F064006514C4 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAD3230D1AD4F064006514C4 /* photo3.jpg */; };
@@ -98,6 +100,9 @@
 		2CB9E4DF1AD481250035B088 /* PAAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAAlbum.m; sourceTree = "<group>"; };
 		2CB9E4E11AD481400035B088 /* PAPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPhoto.h; sourceTree = "<group>"; };
 		2CB9E4E21AD481400035B088 /* PAPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPhoto.m; sourceTree = "<group>"; };
+		2CB9E5421AD57B840035B088 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2CB9E5441AD580140035B088 /* PAAlbumTitleReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAAlbumTitleReusableView.h; sourceTree = "<group>"; };
+		2CB9E5451AD580140035B088 /* PAAlbumTitleReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAAlbumTitleReusableView.m; sourceTree = "<group>"; };
 		AAD3230B1AD4F064006514C4 /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
 		AAD3230C1AD4F064006514C4 /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
 		AAD3230D1AD4F064006514C4 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
@@ -151,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB9E5431AD57B840035B088 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +173,7 @@
 		2CB9E4A41AD46D8E0035B088 = {
 			isa = PBXGroup;
 			children = (
+				2CB9E5421AD57B840035B088 /* QuartzCore.framework */,
 				2CB9E4AF1AD46D8E0035B088 /* PhotoAlbums */,
 				2CB9E4C91AD46D8E0035B088 /* PhotoAlbumsTests */,
 				2CB9E4AE1AD46D8E0035B088 /* Products */,
@@ -233,6 +240,8 @@
 				2CB9E4D81AD46F8F0035B088 /* PACollectionViewLayout.m */,
 				2CB9E4DA1AD471360035B088 /* PAAlbumPhotoCell.h */,
 				2CB9E4DB1AD471360035B088 /* PAAlbumPhotoCell.m */,
+				2CB9E5441AD580140035B088 /* PAAlbumTitleReusableView.h */,
+				2CB9E5451AD580140035B088 /* PAAlbumTitleReusableView.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -462,6 +471,7 @@
 				2CB9E4E01AD481250035B088 /* PAAlbum.m in Sources */,
 				2CB9E4E31AD481400035B088 /* PAPhoto.m in Sources */,
 				2CB9E4DC1AD471360035B088 /* PAAlbumPhotoCell.m in Sources */,
+				2CB9E5461AD580140035B088 /* PAAlbumTitleReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
